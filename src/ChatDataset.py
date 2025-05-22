@@ -1,7 +1,7 @@
 from datasets import load_dataset
 from transformers import AutoTokenizer
 
-MODEL = "mistralai/Mistral-7B-v0.1"
+MODEL = "google/medgemma-4b-it"
 
 class ChatDataset:
     def __init__(self, file_path, tokenizer_name=MODEL, max_length=2048):
