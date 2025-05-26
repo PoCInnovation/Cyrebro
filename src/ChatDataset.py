@@ -4,7 +4,7 @@ from transformers import AutoTokenizer
 MODEL = "google/medgemma-4b-it"
 
 class ChatDataset:
-    def __init__(self, file_path, tokenizer_name=MODEL, max_length=2048):
+    def __init__(self, file_path, tokenizer_name=MODEL, max_length=512):
         self.file_path = file_path
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
         self.max_length = max_length
